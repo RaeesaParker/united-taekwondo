@@ -30,7 +30,7 @@ export const Address = () => {
         </Flex>
       </Flex>
       
-      <Flex w="60%">
+      <Flex w="60%" >
         <MapContainer />
       </Flex>
     </Flex>

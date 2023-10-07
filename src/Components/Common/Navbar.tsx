@@ -8,7 +8,18 @@ import { Link as ChakraLink, LinkProps, Flex} from "@chakra-ui/react"
 export const NavBar = () => {
 
   return (
-    <Flex bg="blue.dark" alignContent="center" justifyContent="space-around" padding="4">      
+    <Flex 
+      bg="blue.dark" 
+      alignContent="center" 
+      justifyContent="space-around" 
+      padding="4"
+      position="fixed"
+      top="0"
+      width="100%"
+      h="10vh"
+      zIndex="9000"
+      borderBottom="2px solid white"
+    >      
       <ChakraLink as={ReactRouterLink} to='/home' color="tones.white"> Home </ChakraLink>
       <ChakraLink as={ReactRouterLink} to='/about' color="tones.white"> About </ChakraLink>
       <ChakraLink as={ReactRouterLink} to='/training' color="tones.white"> Training </ChakraLink>

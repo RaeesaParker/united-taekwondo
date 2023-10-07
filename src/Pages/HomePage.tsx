@@ -10,7 +10,7 @@ import ImageLogo from "../Assets/LogoWider.png"
 
 export const Homepage = () => {
   return (
-    <Box>
+    <Box mt="15vh">
       <Flex justifyContent="center">
         <Image src={ImageLogo} alt='United Taekwondo Logo'  w="50%"/>
       </Flex>

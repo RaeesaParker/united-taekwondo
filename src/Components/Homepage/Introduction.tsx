@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const Introduction = () => {
   return (
     <Flex 
-      mt="10" 
+      mt="5" 
       p="5" 
       bg="blue.dark"
       justifyContent="space-evenly"
