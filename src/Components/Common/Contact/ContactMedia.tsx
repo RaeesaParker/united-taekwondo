@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react"
+import { Flex, Heading, Link, Text } from "@chakra-ui/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
@@ -26,7 +26,9 @@ export const ContactMedia = () => {
           <Flex direction="column" ml="5" justifyContent="space-around">
             <Text> +44 7368974425</Text>
             <Text> unitedtaekwondo@gmail.com</Text>
-            <Text> United Taekwondo</Text>
+            <Link href="https://www.facebook.com/unitedtaekwondopreston" isExternal>
+              <Text>United Taekwondo</Text>
+            </Link>
           </Flex>
         </Flex>
       </Flex>
