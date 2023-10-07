@@ -24,6 +24,10 @@ const theme = extendTheme({
 			lightgrey:"#D9D9D9"
 		}
   },
+  fonts: {
+    heading: "'Teko', sans-serif",
+    body: "'Ubuntu', sans-serif",
+  },
 })
 
 
