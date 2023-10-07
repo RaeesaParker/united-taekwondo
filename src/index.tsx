@@ -21,7 +21,7 @@ const theme = extendTheme({
 		tones:{
 			white:"#FDFFFC",
 			darkGrey:"#C2C2C2",
-			lightgrey:"#D9D9D9"
+			lightGrey:"#D1D1D1"
 		}
   },
   fonts: {

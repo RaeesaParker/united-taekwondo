@@ -8,7 +8,6 @@ export const ContactTraining = () => {
     <Flex 
       mt="10" 
       p="5"
-      bg="tones.lightGrey"
       justifyContent="space-evenly"
       alignContent="center"
     >
