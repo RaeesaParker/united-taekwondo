@@ -7,7 +7,7 @@ import { Values } from "../Components/AboutPage/Values"
 import { Associations } from "../Components/Common/Associations"
 import { Footer } from "../Components/Common/Footer"
 import { Header } from "../Components/Common/Header"
-import { NavBar } from "../Components/Common/Navbar"
+import { NavBar } from "../Components/Common/Navigation/Navbar"
 
 export const AboutPage = () => {
   return (

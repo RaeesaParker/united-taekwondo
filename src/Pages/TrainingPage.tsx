@@ -5,7 +5,7 @@ import { Associations } from "../Components/Common/Associations"
 import { Address } from "../Components/Common/Contact/Address"
 import { Footer } from "../Components/Common/Footer"
 import { Header } from "../Components/Common/Header"
-import { NavBar } from "../Components/Common/Navbar"
+import { NavBar } from "../Components/Common/Navigation/Navbar"
 import { TrainingContact } from "../Components/TrainingPage/TrainingContact"
 import { TrainingDetails } from "../Components/TrainingPage/TrainingDetails"
 

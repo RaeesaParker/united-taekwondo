@@ -1,10 +1,8 @@
-import { Box, Button, Link as ChakraLink, Flex, Menu, MenuButton, MenuItem, MenuList, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverFooter, PopoverHeader, PopoverTrigger, Portal, Text } from "@chakra-ui/react"
-import React, { useState } from "react"
+import { Box, Button, ButtonGroup, Link as ChakraLink, Flex, Menu, MenuButton, MenuList, Text } from "@chakra-ui/react";
+import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom"
 
-export const NavBar = () => {
-
-
+export const DesktopNav = () => {
 
   return (
     <Flex 
@@ -18,16 +16,25 @@ export const NavBar = () => {
       h="10vh"
       zIndex="9000"
       borderBottom="2px solid white"
-    >      
+    >
       <ChakraLink as={ReactRouterLink} to='/' color="tones.white"> Home </ChakraLink>
       <ChakraLink as={ReactRouterLink} to='/about' color="tones.white"> About </ChakraLink>
       <ChakraLink as={ReactRouterLink} to='/training' color="tones.white"> Training </ChakraLink>
 
+      <ChakraLink as={ReactRouterLink} to='/' color="tones.white"> 
+        <Menu>
+          <MenuButton color="tones.white"> Taekwondo </MenuButton>
+          <MenuList >
+            <Text color="blue.dark">COMING SOON!</Text>
+          </MenuList>
+        </Menu>
+      </ChakraLink>
+{/* 
       <Menu>
         <MenuButton color="tones.white"> Taekwondo </MenuButton>
         <MenuList >
           <Text>COMING SOON!</Text>
-        </MenuList>
+        </MenuList> */}
 
         {/* <MenuList >
           <Button bg="none" fontWeight="normal"_hover={{backgroundColor:"none"}}>
@@ -66,12 +73,13 @@ export const NavBar = () => {
           </Popover>
           
         </MenuList> */}
-      </Menu>
+      {/* </Menu> */}
 
       <ChakraLink as={ReactRouterLink} to='/contact' color="tones.white"> Contact </ChakraLink>
+    
     </Flex>
-  )
-}
+  );
+};
 
 
 export const DropDownButton = ({text, link}: {text:string, link:string}) => {
