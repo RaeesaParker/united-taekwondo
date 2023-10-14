@@ -2,14 +2,22 @@ import { Flex, Image, useBreakpointValue } from "@chakra-ui/react"
 import React from "react"
 
 import ImageMobileLogo from "../../Assets/LogoNew.png"
+import ImageLogoTablet from "../../Assets/LogoWide.png"
 import ImageLogo from "../../Assets/LogoWider.png"
 
 export const Header = () => {
-  const isMobile = useBreakpointValue({ base: true, sm: false }); 
+  const imageSize = useBreakpointValue({ base: "100%", sm: "80%", md: "60%" });
+
+  const logoSrc = useBreakpointValue({
+    base: ImageMobileLogo,
+    sm: ImageLogoTablet,
+    md: ImageLogo,
+  });
+
 
   return (
     <Flex justifyContent="center">
-        <Image src={isMobile ? ImageMobileLogo : ImageLogo} alt='United Taekwondo Logo' h="30vh"/>
+      <Image src={logoSrc} alt="United Taekwondo Logo" width={imageSize} />    
     </Flex>
   )
 }
