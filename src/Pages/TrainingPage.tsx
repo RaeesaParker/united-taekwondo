@@ -1,9 +1,7 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react"
+import { Box, Flex, Text } from "@chakra-ui/react"
 import React from "react"
 
 import { Address } from "../Components/Common/Contact/Address"
-import { ContactMedia } from "../Components/Common/Contact/ContactMedia"
-import { MessageBox } from "../Components/Common/Contact/MessageBox"
 import { Footer } from "../Components/Common/Footer"
 import { Header } from "../Components/Common/Header"
 import { NavBar } from "../Components/Common/Navbar"
