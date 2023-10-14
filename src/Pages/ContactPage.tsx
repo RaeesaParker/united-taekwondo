@@ -36,12 +36,16 @@ export const ContactPage = () => {
         </Flex>
       </Flex>
 
-      <MediaItem title={"Phone"} text={"+44 7368974425"} iconName={faPhone} />
-      <MediaItem title={"WhatsApp"} text={"+44 7368974425"} iconName={faWhatsapp} />
-      <MediaItem title={"Email"} text={"unitedtaekwondo@gmail.com"} iconName={faEnvelope} />
-      <MediaItem title={"Facebook"} text={"United Taekwondo"} iconName={faFacebook} linkToggle={"https://www.facebook.com/unitedtaekwondopreston"}/>
+      <Flex justifyContent="space-between" gap="2" mt="5">
+        <Flex w="80%" bg="tones.white" flexDirection="column" justifyContent="space-between"> 
+          <MediaItem title={"Phone"} text={"+44 7368974425"} iconName={faPhone} />
+          <MediaItem title={"WhatsApp"} text={"+44 7368974425"} iconName={faWhatsapp} />
+          <MediaItem title={"Email"} text={"unitedtaekwondo@gmail.com"} iconName={faEnvelope} />
+          <MediaItem title={"Facebook"} text={"United Taekwondo"} iconName={faFacebook} linkToggle={"https://www.facebook.com/unitedtaekwondopreston"}/>
+        </Flex>
+        <MessageBar />
+      </Flex>
 
-      <MessageBar />
       <Associations />
       <Footer />
     </Box>

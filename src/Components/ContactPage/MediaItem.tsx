@@ -6,7 +6,6 @@ import React from "react"
 export const MediaItem = ({title, text, iconName, linkToggle} : {title:string, text:string, iconName:IconDefinition, linkToggle?:string}) => {
   return (
     <Flex
-      mt="8" 
       p="5" 
       justifyContent="space-evenly"
       alignItems="center"
