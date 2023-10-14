@@ -1,8 +1,10 @@
-import { Box, Flex, Heading,Text } from "@chakra-ui/react"
+import { Flex, Heading, Text } from "@chakra-ui/react"
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
+
 import MapContainer from "./MapContainer"
+
 export const Address = () => {
 
   return (

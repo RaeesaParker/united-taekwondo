@@ -1,6 +1,6 @@
+import { Link as ChakraLink, Flex } from "@chakra-ui/react"
 import React from "react"
 import { Link as ReactRouterLink } from "react-router-dom"
-import { Link as ChakraLink, LinkProps, Flex} from "@chakra-ui/react"
 
 <ChakraLink as={ReactRouterLink} to='/home'>
   Home

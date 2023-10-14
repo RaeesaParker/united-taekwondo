@@ -1,20 +1,15 @@
 import { Flex, Heading, Link, Text } from "@chakra-ui/react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
 export const ContactMedia = () => {
   return (
-    <Flex 
-      mt="10" 
-      p="5"
-      bg="tones.lightGrey"
+    <Flex       
+      pb="5" pr="5" pl="5"
       justifyContent="space-evenly"
-      alignContent="center"
-    >
-      <Flex  direction="column">
-        <Heading as="h2">Contact Us</Heading>
+      alignContent="center" direction="column">
 
         <Flex mt="7" height="30vh">
           <Flex justifyContent="space-around" pr="5" borderRight="3px solid black" direction="column">
@@ -32,6 +27,5 @@ export const ContactMedia = () => {
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
   )
 }

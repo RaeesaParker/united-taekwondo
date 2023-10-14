@@ -1,5 +1,5 @@
-import { Flex, Button, FormControl, Text, Input, Textarea, useToast} from "@chakra-ui/react"
-import { ValidationError, useForm } from "@formspree/react";
+import { Button, Flex, FormControl, Input, Text, Textarea, useToast } from "@chakra-ui/react"
+import { useForm, ValidationError } from "@formspree/react";
 import React, { FormEvent } from "react"
 
 export const MessageBox = () => {
@@ -40,7 +40,6 @@ export const MessageBox = () => {
 
   return (      
     <Flex 
-      mt="10" 
       p="5"
       justifyContent="space-evenly"
       alignContent="center"
