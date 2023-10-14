@@ -7,13 +7,12 @@ export const DesktopNav = () => {
   return (
     <Flex 
       bg="blue.dark" 
-      alignContent="center" 
+      alignItems="center" 
       justifyContent="space-around" 
-      padding="4"
       position="sticky"
       top="0"
       width="100%"
-      h="10vh"
+      h={{base:"8vh", sm:"12vh", md:"10vh",  lg:"8vh" , xl:"5vh"}}
       zIndex="9000"
       borderBottom="2px solid white"
     >

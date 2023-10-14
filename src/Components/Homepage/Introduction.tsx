@@ -11,24 +11,28 @@ export const Introduction = () => {
       p="5" 
       bg="blue.dark"
       justifyContent="space-evenly"
-      alignContent="center"
+      alignItems="center"
+      flexDirection={{base:"column", sm:"row"}}
       >
-      <Box w="30%">
+      <Box  >
         <Image 
           src={imageJulie} 
           alt="Image of instructor Master Julie Graham" 
-          boxSize="25vw"
+          boxSize={{base:"50vw", sm:"30vw", md:"25vw"}}
           fallbackSrc='https://via.placeholder.com/150'
           />
       </Box>
+
       <Flex  
-        w="60%" 
+        w={{base: "90%", sm:"60%", md:"60%" }}
+        mt={{base:"3", md:"0"}}
         direction="column" 
         justifyContent="space-around"
         alignContent="center"
         >
-        <Text color="tones.white"> Welcome to United Taekwondo, where unity, discipline, and personal growth are at the core of our practice. Led by Master Julie Graham, a seasoned 6th Dan instructor with decades of experience, we embody the values of hard work and perseverance. At United Taekwondo, every member is valued and encouraged to reach their full potential. Join us in the journey of self-discovery, fitness, and camaraderie as we uphold the rich traditions of Taekwondo.</Text>
-        <Flex justifyContent="space-around" >
+        <Text color="tones.white" textAlign="center"> Welcome to United Taekwondo, where unity, discipline, and personal growth are at the core of our practice. Led by Master Julie Graham, a seasoned 6th Dan instructor with decades of experience, we embody the values of hard work and perseverance. Join us in the journey of self-discovery, fitness, and camaraderie as we uphold the rich traditions of Taekwondo.</Text>
+        
+        <Flex justifyContent="space-around" mt={{base:"3", md:"10"}} >
           <Link to="/about">
             <Button 
               bg="blue.light" 
