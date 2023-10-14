@@ -3,6 +3,7 @@ import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import React from "react"
 
+import { Associations } from "../Components/Common/Associations"
 import { Footer } from "../Components/Common/Footer"
 import { Header } from "../Components/Common/Header"
 import { NavBar } from "../Components/Common/Navbar"
@@ -41,6 +42,7 @@ export const ContactPage = () => {
       <MediaItem title={"Facebook"} text={"United Taekwondo"} iconName={faFacebook} linkToggle={"https://www.facebook.com/unitedtaekwondopreston"}/>
 
       <MessageBar />
+      <Associations />
       <Footer />
     </Box>
   )
