@@ -1,12 +1,13 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react"
 import React from "react"
-import imageJulie from "../../Assets/Julie.png";
 import { Link } from "react-router-dom";
+
+import imageJulie from "../../Assets/Julie.png";
 
 export const Introduction = () => {
   return (
     <Flex 
-      mt="5" 
+      mt="7" 
       p="5" 
       bg="blue.dark"
       justifyContent="space-evenly"
