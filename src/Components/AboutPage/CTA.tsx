@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react"
 import React from "react"
 
 import imageJulie from "../../Assets/Julie.png";
@@ -29,8 +29,11 @@ export const CTA = () => {
         borderTop="3px solid #011627" 
         borderLeft="3px solid #011627"
         p="5"
-        textAlign="justify">
+        textAlign="justify"
+        flexDirection="column"
+        >
         <Text lineHeight="taller">Discover excellence at United Taekwondo in Preston! Led by Master Julie Graham, our club embraces values of discipline and unity as proud members of British Taekwondo. Ready for a transformative martial arts journey? Visit a class or contact us. Join our close-knit family, and thrive in an environment of unity, discipline, and personal growth. Your martial arts journey begins here!</Text>
+        <Button  mt="5" bg="red.dark" color="tones.white" _hover={{color:"blue.dark", bg:"tones.lightGrey"}}> Train with Us </Button>
       </Flex>
 
 

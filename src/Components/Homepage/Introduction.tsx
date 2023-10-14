@@ -33,14 +33,14 @@ export const Introduction = () => {
             <Button 
               bg="blue.light" 
               color="tones.white" 
-              _hover={{color:"blue.dark", bg:"tones.white"}}>
+              _hover={{color:"blue.dark", bg:"tones.lightGrey"}}>
                 Find Out More
             </Button>
           </Link>
 
           <Link to="/training">
             <Button 
-              bg="red.dark">  
+              bg="red.dark" color="tones.white" _hover={{color:"blue.dark", bg:"tones.lightGrey"}}>  
                 Train with Us
             </Button>
           </Link>
