@@ -10,7 +10,6 @@ export const BeltsIntro = () => {
       mt="12" 
       mb="10"
       p="7" 
-      // bg="tones.lightGrey"
       alignItems="flex-start"
       justifyContent="space-evenly"
     >
@@ -24,7 +23,7 @@ export const BeltsIntro = () => {
         >
           <Text color="blue.dark" >In Taekwondo, belts indicate skill level—each color represents progress and expertise gained through training.</Text>
           <Link to="/taekwondo/belts">
-            <Button bg="red.dark" color="tones.white" _hover={{color:"blue.dark", bg:"tones.lightGrey"}}>  
+            <Button bg="blue.light" color="tones.white" _hover={{color:"blue.dark", bg:"tones.lightGrey"}}>  
                 Learn more
             </Button>
           </Link>
