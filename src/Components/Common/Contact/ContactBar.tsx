@@ -14,6 +14,7 @@ export const ContactBar = () => {
     bg="tones.lightGrey"
     pt="10"
     pb="5"
+    flexDirection={{base:"column", md:"row"}}
   >
     <Box>
     <Heading as="h2">Training Times</Heading>

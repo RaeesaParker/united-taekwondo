@@ -1,8 +1,13 @@
-import { Box, Button, ButtonGroup, Link as ChakraLink, Flex, Menu, MenuButton, MenuList, Text } from "@chakra-ui/react";
+import { Link as ChakraLink, Flex, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom"
 
 export const DesktopNav = () => {
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
     <Flex 
@@ -20,79 +25,21 @@ export const DesktopNav = () => {
       <ChakraLink as={ReactRouterLink} to='/about' color="tones.white"> About </ChakraLink>
       <ChakraLink as={ReactRouterLink} to='/training' color="tones.white"> Training </ChakraLink>
 
-      <ChakraLink as={ReactRouterLink} to='/' color="tones.white"> 
-        <Menu>
-          <MenuButton color="tones.white"> Taekwondo </MenuButton>
-          <MenuList >
-            <Text color="blue.dark">COMING SOON!</Text>
-          </MenuList>
-        </Menu>
-      </ChakraLink>
-{/* 
-      <Menu>
-        <MenuButton color="tones.white"> Taekwondo </MenuButton>
-        <MenuList >
-          <Text>COMING SOON!</Text>
-        </MenuList> */}
-
-        {/* <MenuList >
-          <Button bg="none" fontWeight="normal"_hover={{backgroundColor:"none"}}>
-            <ChakraLink as={ReactRouterLink} to="/taekwondo/belts"> About </ChakraLink>
-          </Button>
-
-          <Popover placement="bottom-start" trigger="hover" >
-            <PopoverTrigger  >
-              <Button 
-                bg="none"
-                fontWeight="normal"
-                _hover={{ textDecoration:"underline"}}
-                width="100%"
-                justifyContent="flex-start"
-              >
-                <Text textAlign="left">Belts</Text>
-              </Button>
-            </PopoverTrigger>
-
-            <Portal>
-              <PopoverContent w="100%">
-                <PopoverBody >
-                  <DropDownButton text={"White"} link={"taekwondo/belt/white"}/>
-                  <DropDownButton text={"Yellow"} link={"taekwondo/belt/yellow"} />
-                  <DropDownButton text={"Green Tag"} link={"taekwondo/belt/green-tag"} />
-                  <DropDownButton text={"Green"} link={"taekwondo/belt/green"} />
-                  <DropDownButton text={"Blue Tag"} link={"taekwondo/belt/blue-tag"} />
-                  <DropDownButton text={"Blue"} link={"taekwondo/belt/blue"} />
-                  <DropDownButton text={"Red Tag"} link={"taekwondo/belt/red-tag"}/>
-                  <DropDownButton text={"Red"} link={"taekwondo/belt/red"}/>
-                  <DropDownButton text={"Black Tag"} link={"taekwondo/belt/black-tag"} />
-                  <DropDownButton text={"Black"} link={"taekwondo/belt/black"} />
-                </PopoverBody>
-              </PopoverContent>
-            </Portal>
-          </Popover>
-          
-        </MenuList> */}
-      {/* </Menu> */}
+      <Menu isOpen={isOpen} onClose={onClose}>
+        <MenuButton _hover={{ textDecoration: "underline" }} onClick={onOpen} color="tones.white">
+          TaeKwonDo {<FontAwesomeIcon icon={faChevronDown} />}
+        </MenuButton>
+        <MenuList>
+          <ChakraLink as={ReactRouterLink} to='/taekwondo' color="tones.white">             
+            <MenuItem color="blue.dark">About</MenuItem>
+          </ChakraLink>
+          <ChakraLink as={ReactRouterLink} to='/taekwondo/belts' color="tones.white">             
+            <MenuItem color="blue.dark">Belts</MenuItem>
+          </ChakraLink>          
+        </MenuList>
+      </Menu>
 
       <ChakraLink as={ReactRouterLink} to='/contact' color="tones.white"> Contact </ChakraLink>
-    
     </Flex>
   );
 };
-
-
-export const DropDownButton = ({text, link}: {text:string, link:string}) => {
-  return (
-    <Box>
-      <Button 
-        bg="none"
-        fontWeight="normal"
-        _hover={{ textDecoration:"underline"}}
-        justifyContent="flex-start"
-      >
-        <ChakraLink as={ReactRouterLink} to={link} color="blue.dark"> {text} </ChakraLink>
-      </Button>
-      <br></br>
-    </Box>
-  )
-}
