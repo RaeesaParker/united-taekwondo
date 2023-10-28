@@ -4,6 +4,7 @@ import React from "react"
 import { Associations } from "../Components/Common/Associations"
 import { Address } from "../Components/Common/Contact/Address"
 import { Footer } from "../Components/Common/Footer"
+import { FSF } from "../Components/Common/FSF"
 import { Header } from "../Components/Common/Header"
 import { NavBar } from "../Components/Common/Navigation/Navbar"
 import { TrainingContact } from "../Components/TrainingPage/TrainingContact"
@@ -33,7 +34,7 @@ export const TrainingPage = () => {
           <Text lineHeight="taller" textAlign="center">Join us for an invigorating training experience led by Master Julie Graham. Whether you&apos;re a beginner or an experienced practitioner, our classes cater to all levels and ages.</Text>
         </Flex>
       </Flex>
-
+      <FSF />
       <TrainingDetails />
       <Address />
       <TrainingContact />
