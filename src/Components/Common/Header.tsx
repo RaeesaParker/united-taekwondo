@@ -1,9 +1,9 @@
 import { Flex, Image, useBreakpointValue } from "@chakra-ui/react"
 import React from "react"
 
-import ImageMobileLogo from "../../Assets/LogoNew.png"
-import ImageLogoTablet from "../../Assets/LogoWide.png"
-import ImageLogo from "../../Assets/LogoWider.png"
+import ImageMobileLogo from "../../Assets/logos/LogoNew.png"
+import ImageLogoTablet from "../../Assets/logos/LogoWide.png"
+import ImageLogo from "../../Assets/logos/LogoWider.png"
 
 export const Header = () => {
   const imageSize = useBreakpointValue({ base: "100%", sm: "80%", md: "60%" });

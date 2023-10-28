@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Homepage } from "./Pages/HomePage";
 import { AboutPage } from "./Pages/AboutPage";
-import { TrainingPage } from "./Pages/TrainingPage";
 import { ContactPage } from "./Pages/ContactPage";
-import { TaekwondoPage } from "./Pages/Taekwondo/TaekwondoPage";
+import { Homepage } from "./Pages/HomePage";
 import { BeltsPage } from "./Pages/Taekwondo/BeltsPage";
+import { TaekwondoPage } from "./Pages/Taekwondo/TaekwondoPage";
+import { TrainingPage } from "./Pages/TrainingPage";
 
 export const webRoutes = [
   { path: "/", element: ( < Homepage/> ) }, 

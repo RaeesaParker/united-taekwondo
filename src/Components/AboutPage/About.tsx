@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react"
 import React from "react"
 
-import imageJulie from "../../Assets/Julie.png";
+import imageJulie from "../../Assets/clubImages/Julie.png";
 
 export const About = () => {
   return (

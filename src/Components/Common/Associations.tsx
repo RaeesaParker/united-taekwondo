@@ -1,8 +1,8 @@
 import { Flex, Image } from "@chakra-ui/react"
 import React from "react"
 
-import ImageBritishTaekwondo from "../../Assets/BritishTaekwondo.png"
-import ImageWTF from "../../Assets/wtf.png"
+import ImageBritishTaekwondo from "../../Assets/affiliations/BritishTaekwondo.png"
+import ImageWTF from "../../Assets/affiliations/wtf.png"
 
 export const Associations = () => {
   return (

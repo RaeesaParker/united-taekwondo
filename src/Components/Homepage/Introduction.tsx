@@ -2,7 +2,7 @@ import { Box, Button, Flex, Image, Text } from "@chakra-ui/react"
 import React from "react"
 import { Link } from "react-router-dom";
 
-import imageJulie from "../../Assets/Julie.png";
+import imageJulie from "../../Assets/clubImages/Julie.png";
 
 export const Introduction = () => {
   return (
