@@ -15,9 +15,10 @@ export const Values = () => {
     >
       <Heading mb="5" color="tones.white">Our Values</Heading>
 
-      <Flex alignItems="space-evenly" w="70%" justifyContent="space-around">
+      <Flex  alignItems={{base:"flex-start", sm:"space-evenly" }}w="70%" justifyContent="space-around" alignContent="center" direction={{base:"column", sm:"row"}}>
+        
         <Box>
-          <List spacing={5}>
+          <List spacing={{base:"1", sm:"5"}}>
             <ListItem color="tones.white">
               <FontAwesomeIcon icon={faAsterisk} color="#FDFFFC" size="1x" style={{ paddingRight: "10px" }}/>
               Courtesy
@@ -30,7 +31,7 @@ export const Values = () => {
         </Box>
 
         <Box>
-          <List spacing={5}>
+          <List spacing={{base:"1", sm:"5"}}>
             <ListItem color="tones.white">
               <FontAwesomeIcon icon={faAsterisk} color="#FDFFFC" size="1x" style={{ paddingRight: "10px" }}/>
               Humility
@@ -43,7 +44,7 @@ export const Values = () => {
         </Box>
 
         <Box>
-          <List spacing={5}>
+          <List spacing={{base:"1", sm:"5"}}>
             <ListItem color="tones.white">
               <FontAwesomeIcon icon={faAsterisk} color="#FDFFFC" size="1x" style={{ paddingRight: "10px" }}/>
               Courage
@@ -56,7 +57,7 @@ export const Values = () => {
         </Box>
 
         <Box>
-          <List spacing={5}>
+          <List spacing={{base:"1", sm:"5"}}>
             <ListItem color="tones.white">
               <FontAwesomeIcon icon={faAsterisk} color="#FDFFFC" size="1x" style={{ paddingRight: "10px" }}/>
               Self-Control

@@ -12,24 +12,27 @@ export const CTA = () => {
       p="5" 
       justifyContent="space-evenly"
       alignContent="center"
+      alignItems="center"
+      flexDirection={{base:"column", sm:"row"}}
     >
-      <Box w="30%">
+      <Box >
         <Image 
           src={imageJulie} 
           alt="Image of instructor Master Julie Graham" 
-          boxSize="25vw"
+          boxSize={{base:"60vw", sm:"40vw"}}
           fallbackSrc='https://via.placeholder.com/150'
           />
       </Box>
 
       <Flex  
-        w="40%" 
+        w={{base:"95%", sm:"50%"}}  
         alignItems="center" 
         borderRight="5px solid #011627" 
         borderBottom="5px solid #011627" 
         borderTop="3px solid #011627" 
         borderLeft="3px solid #011627"
         p="5"
+        mt={{base:"3", sm:"0"}}
         textAlign="justify"
         flexDirection="column"
         >
