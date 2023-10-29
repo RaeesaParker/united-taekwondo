@@ -12,17 +12,19 @@ export const MediaItem = ({title, text, iconName, linkToggle} : {title:string, t
       alignContent="center"
       bg="tones.lightGrey"
     >
-    <Flex  w="33%" justifyContent="center">    <FontAwesomeIcon icon={iconName} color="blue.dark" size="2x" /> </Flex>
-    <Box w="33%"> <Heading color="blue.dark" textAlign="center">{title}</Heading> </Box>
-    {linkToggle ? 
-    <Box w="33%">
-      <Link href={linkToggle}isExternal >
-        <Text  as="h3" fontWeight="bold" color="blue.dark" textAlign="center">{text}</Text>
-      </Link>
-    </Box>
-    :
-      <Box w="33%"> <Text  as="h3" fontWeight="bold" color="blue.dark" textAlign="center"> {text}</Text> </Box>
-    }
+      <Flex  w={{base:"10%" , sm:"33%"}} justifyContent="center">    <FontAwesomeIcon icon={iconName} color="blue.dark" size="2x" /> </Flex>
+    
+      <Box w={{base:"35%" , sm:"33%"}}> <Heading color="blue.dark" textAlign="center">{title}</Heading> </Box>
+    
+      {linkToggle ? 
+      <Box w={{base:"45%" , sm:"33%"}}>
+        <Link href={linkToggle}isExternal >
+          <Text  as="h3" fontWeight="bold" color="blue.dark" textAlign="center">{text}</Text>
+        </Link>
+      </Box>
+      :
+        <Box w={{base:"45%" , sm:"33%"}}> <Text  as="h3" fontWeight="bold" color="blue.dark" textAlign="center"> {text}</Text> </Box>
+      }
     </Flex>
   )
 }

@@ -7,8 +7,9 @@ import imageJulie from "../../Assets/clubImages/Julie.png";
 export const CTA = () => {
   return (
     <Flex 
-      mt="16" 
-      mb="16"
+      mt="5" 
+      mb="10"
+      gap="3"
       p="5" 
       justifyContent="space-evenly"
       alignContent="center"
@@ -19,13 +20,13 @@ export const CTA = () => {
         <Image 
           src={imageJulie} 
           alt="Image of instructor Master Julie Graham" 
-          boxSize={{base:"60vw", sm:"40vw"}}
+          boxSize={{base:"60vw", sm:"25vw", lg:"20vw"}}
           fallbackSrc='https://via.placeholder.com/150'
           />
       </Box>
 
       <Flex  
-        w={{base:"95%", sm:"50%"}}  
+        w={{base:"95%", md:"75%", lg:"60%"}} 
         alignItems="center" 
         borderRight="5px solid #011627" 
         borderBottom="5px solid #011627" 

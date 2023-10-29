@@ -7,7 +7,7 @@ import taekwondoImage from "../../Assets/stock/belt.jpeg";
 export const BeltsIntro = () => {
   return (
     <Flex
-      mt="12" 
+      mt="5" 
       mb="10"
       p="7" 
       alignItems={{base:"center", sm:"flex-start"}}
@@ -34,7 +34,7 @@ export const BeltsIntro = () => {
       <Flex justifyContent="flex-start" direction="column" >
         <Image 
           src={taekwondoImage} 
-          boxSize={{base:"60vw", sm:"25vw", lg:"20vw"}}
+          boxSize={{base:"60vw", sm:"25vw", lg:"15vw"}}
           alt="Image of taekwondo" 
           fallbackSrc='https://via.placeholder.com/150'
           />

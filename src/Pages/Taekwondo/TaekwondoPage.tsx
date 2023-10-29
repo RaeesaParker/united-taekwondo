@@ -24,7 +24,7 @@ export const TaekwondoPage = () => {
         alignContent="center"
       >
         <Flex  
-          w={{base:"95%", sm:"60%" }}
+          w={{base:"95%", md:"85%", lg:"60%"}} 
           alignItems="center" 
           borderRight="5px solid #011627" 
           borderBottom="5px solid #011627" 

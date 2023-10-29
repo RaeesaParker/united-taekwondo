@@ -22,9 +22,10 @@ export const ContactPage = () => {
         p="5" 
         justifyContent="center"
         alignContent="center"
+        alignItems="center"
       >
         <Flex  
-          w="60%" 
+          w={{base:"95%", md:"85%", lg:"70%"}} 
           alignItems="center" 
           borderRight="5px solid #011627" 
           borderBottom="5px solid #011627" 
@@ -36,8 +37,8 @@ export const ContactPage = () => {
         </Flex>
       </Flex>
 
-      <Flex justifyContent="space-between" gap="2" mt="5">
-        <Flex w="80%" bg="tones.white" flexDirection="column" justifyContent="space-between"> 
+      <Flex justifyContent="space-between" gap="2" mt="5" flexDirection={{base:"column", sm:"row"}}>
+        <Flex w={{base:"100%", sm:"80%"}} gap={{base:"3", sm:"0"}} bg="tones.white" flexDirection="column" justifyContent="space-between"> 
           <MediaItem title={"Phone"} text={"+44 7368974425"} iconName={faPhone} />
           <MediaItem title={"WhatsApp"} text={"+44 7368974425"} iconName={faWhatsapp} />
           <MediaItem title={"Email"} text={"unitedtaekwondo@gmail.com"} iconName={faEnvelope} />

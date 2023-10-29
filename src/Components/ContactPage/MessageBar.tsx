@@ -11,10 +11,10 @@ export const MessageBar = () => {
       bg="tones.lightGrey"
       pt="10"
       pb="5"
-      w="50%"
+      w={{base:"100%", sm:"50%"}}
       direction="column"
     >
-      <Box w="33%"> <Heading color="blue.dark" textAlign="center">Message</Heading> </Box>
+      <Box> <Heading color="blue.dark" textAlign="center">Message</Heading> </Box>
       <MessageBox />
     </Flex>
   )

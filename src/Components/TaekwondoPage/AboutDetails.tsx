@@ -6,7 +6,7 @@ import taekwondoImage from "../../Assets/stock/taekwondo1.jpeg";
 export const AboutDetails = () => {
   return (
     <Flex
-      mt="12" 
+      mt="5" 
       p="7" 
       gap="5"
       bg="blue.dark"

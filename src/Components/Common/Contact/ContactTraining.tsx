@@ -11,11 +11,11 @@ export const ContactTraining = () => {
       alignItems="center"
       direction="column"
     >
-      <Flex mt="7" height="30vh">
+      <Flex mt="7" height={{base:"15vh", sm:"30vh"}} >
         <Flex alignItems="center"  pr="5" borderRight="3px solid black">
           <FontAwesomeIcon icon={faClock} color="blue.dark" size="2x" />
         </Flex>
-        <Flex direction="column" ml="5" justifyContent="center">
+        <Flex direction="column" ml="5" justifyContent="center" gap={{base:"2", lg:"5"}}>
           <Text as="h3" fontWeight="bold">Friday</Text>
           <Text> 5pm - 6pm &nbsp;&nbsp;&nbsp;&nbsp; Everyone</Text>
           <Text>6pm - 7pm &nbsp;&nbsp;&nbsp;&nbsp; Blue Belts + </Text>

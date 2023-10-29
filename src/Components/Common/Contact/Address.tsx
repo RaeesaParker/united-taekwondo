@@ -20,10 +20,11 @@ export const Address = () => {
       <Flex  direction="column" justifyContent="center" alignItems="center">
         <Heading as="h2">Address</Heading>
 
-        <Flex mt="7" height="30vh" >
+        <Flex mt="7" height={{base:"15vh", sm:"30vh" }}>
           <Flex alignItems="center"  pr="5" borderRight="3px solid black">
             <FontAwesomeIcon icon={faLocationPin} color="blue.dark" size="2x" />
           </Flex>
+
           <Flex direction="column" ml="5" justifyContent="center">
             <Text as="h3" fontWeight="bold">1st Lostock Hall Scout HQ</Text>
             <Text> Moss Ln, </Text>
@@ -34,7 +35,7 @@ export const Address = () => {
         </Flex>
       </Flex>
       
-    <Flex w={{base:"85%", sm:"60%"}} mt={{base:"3", sm:"0"}}>
+    <Flex w={{base:"85%", sm:"60%"}} mt={{base:"5", sm:"0"}}>
         <MapContainer />
       </Flex>
     </Flex>
