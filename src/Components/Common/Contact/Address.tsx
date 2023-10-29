@@ -11,11 +11,13 @@ export const Address = () => {
     <Flex 
       justifyContent="space-around" 
       alignContent="center" 
+      alignItems="center"
       mt="5"
       bg="tones.lightGrey"
       pt="5" pb="5"
+      flexDirection={{base:"column", sm:"row"}}
     >
-      <Flex  direction="column" justifyContent="center">
+      <Flex  direction="column" justifyContent="center" alignItems="center">
         <Heading as="h2">Address</Heading>
 
         <Flex mt="7" height="30vh" >
@@ -32,7 +34,7 @@ export const Address = () => {
         </Flex>
       </Flex>
       
-      <Flex w="60%" >
+    <Flex w={{base:"85%", sm:"60%"}} mt={{base:"3", sm:"0"}}>
         <MapContainer />
       </Flex>
     </Flex>
