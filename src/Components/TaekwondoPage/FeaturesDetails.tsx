@@ -9,20 +9,23 @@ export const FeaturesDetails = () => {
       mt="12" 
       p="7" 
       bg="blue.dark"
-      alignItems="flex-start"
+      gap="5"
+      alignItems={{base:"center", sm:"flex-start"}}
       justifyContent="space-evenly"
+      flexDirection={{base:"column", sm:"row"}}
     >
 
-      <Flex justifyContent="flex-start" direction="column" w="20%">
+      <Flex justifyContent="flex-start" direction="column" mb={{base:"5", sm:"0"}}>
         <Image 
           src={taekwondoImage} 
+          boxSize={{base:"60vw", sm:"25vw", lg:"20vw"}}
           alt="Image of taekwondo" 
           fallbackSrc='https://via.placeholder.com/150'
           />
       </Flex>
 
       <Flex  
-        w="50%"
+        w={{base:"95%", sm:"60%" }}
         alignItems="left" 
         borderRight="5px solid #007CBE" 
         borderBottom="5px solid #007CBE" 
