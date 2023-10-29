@@ -11,10 +11,11 @@ export const TrainingContact = () => {
       mb="8"
       p="5" 
       justifyContent="space-around"
-      alignItems="space-evenly"
+      alignItems={{base:"center", sm:"space-evenly"}}
+      flexDirection={{base:"column", sm:"row"}}
     >
       <Flex 
-        w="30%"
+        w={{base:"95%", sm:"30%"}}
         alignItems="center" 
         borderRight="5px solid #011627" 
         borderBottom="5px solid #011627" 
