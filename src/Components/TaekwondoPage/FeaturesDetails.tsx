@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react"
+import { Flex, Image, Text } from "@chakra-ui/react"
 import React from "react"
 
 import taekwondoImage from "../../Assets/stock/kick.jpeg";

@@ -1,9 +1,8 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react"
+import { Flex, Heading, Text } from "@chakra-ui/react"
 import { faLandmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react"
 
-import taekwondoImage from "../../Assets/stock/taekwondo1.jpeg";
 
 export const TenetsDetails = () => {
   return (

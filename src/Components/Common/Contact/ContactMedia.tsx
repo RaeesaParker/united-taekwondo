@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, Text } from "@chakra-ui/react"
+import { Flex, Link, Text } from "@chakra-ui/react"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
